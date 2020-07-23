@@ -1,0 +1,39 @@
+#card-blue {
+    position: sticky;
+    top: 500px;    
+    width: 100%;
+    height: auto;    
+}
+
+#card-round {
+    border-radius: 35px;
+}
+
+#button-round {
+    border-radius: 35px;
+    display: inline-block;
+    line-height: normal;
+}
+
+#hove-img {
+    position: absolute;
+    float: right;
+    left: 90%;
+    bottom: 15px;
+}
+
+#p-text {
+    margin-top: 10%;
+    text-align: center;
+}
+
+@media screen and (max-width: 200px) {
+    #card-blue {
+        position: relative;
+        top: 200px;
+        left: 20px;
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}

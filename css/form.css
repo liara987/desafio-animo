@@ -1,0 +1,138 @@
+input{
+    box-sizing: border-box !important; 
+    border: 1px solid #2196f3 !important;
+    width: 200px !important;
+    padding: 20px !important;
+    border-radius: 10px !important;        
+}
+
+input:focus {
+    border-bottom: 1px solid royalblue !important;
+    box-shadow: 0 1px 0 0 royalblue !important;      
+}
+
+input::placeholder{
+    color: #2196f3 !important;
+}
+
+label.active {
+    color: royalblue !important;
+}
+
+#subscription {
+    font-size: 12px;
+}
+
+#background-form {
+    background-image: url(/images/form-fundo.png);
+    background-size: cover;
+}
+
+#button-form{
+    border-radius: 30px;
+    padding-left: 50px;
+    padding-right: 50px;    
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.background {
+    display: flex;
+    min-height: 100vh;
+}
+
+.containers {
+    flex: 0 1 700px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 35px;
+}
+
+.screen {
+    position: relative;
+    background: white;
+    border-radius: 35px;
+}
+
+.screen:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+    z-index: -1;
+    border-radius: 35px;
+}
+
+.screen-body {
+    display: flex;
+}
+
+.screen-body-item {
+    flex: 1;
+    padding: 50px;
+}
+
+.screen-body-item.left {
+    background-color: #2196f3;
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+}
+
+.app-form-group {
+    margin-bottom: 15px;
+}
+
+.app-form-group.buttons {
+    margin-bottom: 0;
+    text-align: right;
+}
+
+.app-form-control {
+    width: 100%;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    color: #90caf9;
+    font-size: 9px;
+    outline: none;
+    transition: border-color .2s;
+}
+
+@media screen and (max-width: 320px) {
+    .screen-body {
+        flex-direction: column;
+    }
+    .screen-body-item.left {
+        margin-bottom: 30px;
+    }
+    .app-title {
+        flex-direction: row;
+    }
+    .app-title span {
+        margin-right: 12px;
+    }
+    .app-title:after {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .screen-body {
+        padding: 40px;
+    }
+    .screen-body-item {
+        padding: 0;
+    }
+}

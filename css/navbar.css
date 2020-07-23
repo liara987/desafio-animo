@@ -1,0 +1,33 @@
+.no-shadows {
+    box-shadow: none!important;
+}
+
+.actived, #nav-hover a:hover {
+    background-color: white;
+    border-bottom: 3px solid #2196f3;
+}
+
+#button-round:hover {
+    -ms-transform: rotate(10deg);
+    transform: rotate(10deg);
+    background-color: blue !important;
+    color: white !important;
+}
+
+#div-navbar {
+    width: max-content;
+}
+
+#background-nav{
+    background-image: url(/images/fundo-cervo.png);
+}
+
+#nav {
+    position: relative;
+    top: 200px;
+}
+
+#nav-hover {
+    margin-top: 6%;
+    margin-right: 20%;
+}
